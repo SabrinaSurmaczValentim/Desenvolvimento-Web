@@ -1,0 +1,48 @@
+<!-- 
+    Na página principal crie uma tabela, adicione na primeira linha as seguintes colunas: Lugares, Comidas, música preferida e playlist
+    Na segunda linha, as colunas devem conter um texto sobre os itens acima: exeemplo, na linha 1 tem Lugares, na linha 2 escrevo: Quero Conhecer ou já conheci, e assim por diante.
+    Na terceira linha, incorporar links que vão levar até páginas sobre os respectivos temas
+    Na página Lugares, incorporar um título e iframe do Google Maps, referente ao lugar ou lugares escolhidos
+    Na página Comidas, adicionar um título e as imagens desejadas , todas com descrição, utilizando o atributo title na tag img e também as tags figure e figcaption
+    Na página Música Preferida, adicionar título e a tag áudio ou video com a sua música escolhida . (Deve ter o arquivo baixado para isso), se não possuir o arquivo, adicionar um botão com o link do vídeo
+    Na página playlist, adicionar título e um iframe com a sua playlist favorita, seja ela no youtube ou Spotify
+    Adicionar em todas aas páginas um favicon diferente e um botão de nome Home, para voltar a página inicial. 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="icon" href="../Arquivos Exe6/coração.png">
+ </head>
+ <body>
+    <table border="2">
+        <caption>Sobre mim</caption>
+        <thead>
+            <tr>
+                <th>Lugares</th>
+                <th>Comidas</th>
+                <th>Música preferida</th>
+                <th>Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quero conhecer</td>
+                <td>Minhas preferidas</td>
+                <td align="center">A melhor</td>
+                <td>As melhores</td>
+            </tr>
+            <tr align="center">
+                <td><a href="Lugares.html" target="_blank">Link</a></td>
+                <td><a href="Comidas.html" target="_blank">Link</a></td>
+                <td><a href="Música.html" target="_blank">Link</a></td>
+                <td><a href="Playlist.html" target="_blank">Link</a></td>
+            </tr>
+        </tbody>
+    </table>
+ </body>
+ </html>

@@ -1,0 +1,85 @@
+<!--
+    CITAÇÕES
+    Usamos a tag <blockquote> para citar textos maiores
+    Usamos a tag <cite> dentro do link, direto no texto
+    Usamos a tag <q> para citações curtas, com "aspas" no texto
+
+    Ctrl; Comentar
+-->
+    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+        HTML significa Linguagem de Marcação de Hipertexto
+    </blockquote>
+
+    <p>
+        Segundo o MDN:
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><cite>HTML</cite></a> quer dizer Linguagem de Marcação de Hipertexto
+    </p>
+
+    <p>
+        Segundo o site (MDN, 2022). <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML significa Linguagem de Marcação de Hipertexto.</q>--<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><cite>MDN</cite></a>
+    </p>
+
+<!-- 
+    ÂNCORA
+    Tag responsável pelos hyperlinks. Ligação entre as páginas
+    <a href=""></a>
+    Além dos links "tradicionais", podemos utilizar para contatos, como: email e telefone
+    Também podemos utilizar fragmentos para chegar em uma determinada parte do texto
+    Também podemos definir o objeto que irá guardar o link, sendo os principais:
+    Texto
+    Botões
+    Imagem
+ -->
+    <a href="https:\\google.com.br">Gugou</a> 
+    <br>
+    <a href="https:\\google.com.br" target="_blank">Gugou</a> 
+
+    <p>Contatos</p>
+    <ul>
+        <li><a href="mailto:prof_igorkschevy@camporeal.edu.br">Email</a></li>
+        <li><a href="tel:+5542998337474">Zap</a></li>
+    </ul> 
+
+    <a href="https://www.google.com.br/" target="_blank"><button>Gugou</button></a>
+    <br>
+    <a href="https:\\google.com.br" target="_blank"><img src="logo.png" alt="Logo Aqui" width="200px"></a>
+
+    <p>Caminhos Absolutos x Relativos</p>
+    <a href="google.com.br">Gugou</a>
+    <br><br>
+    <a href="https:\\google.com.br">Google</a>
+
+    <!-- Navegando pelos diretórios(PASTAS):
+    Mesmo diretório: basta colocar o nome do arquivo/link.
+    Entrar em diretório: href="diretorio/arquivo.html"
+    Saindo de diretório: href="../arquivo.html"
+    Diretório raiz (mesma pasta): href="./arquivo.html" -->
+
+
+    <!-- NAVEGAÇÃO EM DIRETÓRIOS, PRECISA DE PASTAS PARA TESTAR -->
+    <!-- <a href="index.html">Mesmo Diretório</a>
+    <br>
+    <a href="./index.html">Diretório Raiz</a>
+    <br>
+    <a href="novo/novo.html">Entrando em Diretório</a>
+    <br>
+    <a href="../desk.html">Saindo do Diretório</a> -->
+
+    <p>FRAGMENTOS</p>
+    <ul>
+        <li><a href="#frag1">1 Frag</a></li>
+        <li><a href="#frag2">2 Frag</a></li>
+        <li><a href="#frag3">3 Frag</a></li>
+    </ul>
+    <h1 id="frag1">1 FRAG</h1>
+    <p>primeiro fragmento</p>
+    <h2 id="frag2">2 FRAG</h1>
+    <p>segundo fragmento</p>
+    <h1 id="frag3">3 FRAG</h1>
+    <p>terceiro fragmento</p>
+
+
+
+
+
+    

@@ -1,0 +1,68 @@
+<!-- 
+    TABELAS
+    Tag <table> auxilia na organização dos dados
+    <table>
+        <caption> = Descrição da tabela
+        <thead> = cabeçalho da tabela
+            <tr> = linha do cabeçalho
+            <th> = coluna do cabeçalho
+        <tbody> = corpo da tabela
+            <tr> = linha da tabela
+            <td> = coluna da tabela
+        <tfoot> = rodapé da tabela == <tr> e <td>
+    </table>
+    "Utilizamos a tag <colgroup" para trabalhar cores
+
+    FAVICON
+    Abreviação de Favorite icon, oi ícone dos favoritos
+    Para colocá-lo utilizamos a tag <link> com o atributo rel="icon" para representar a relação de que o link terá um ícone, e por fim utilizamos o atributo href="exemplo.png" para mostrar onde o ícone está.
+    <link rel="icon" href="icone.png">
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favicon</title>
+
+        <link rel="icon" href="media/icone.png">
+
+        <link rel="shortcut icon" href="media/icone.png" type="image/x-icon">
+    </head>
+    <body>
+        
+    </body>
+    </html> 
+ -->
+
+<table border="2">
+    <caption>Alunos</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cursos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Farmácia</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>25</td>
+            <td>Civil</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Soma idades</td>
+            <td colspan="2" align="center">55</td>
+        </tr>
+    </tfoot>
+</table>
+

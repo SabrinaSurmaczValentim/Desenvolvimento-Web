@@ -1,0 +1,104 @@
+<!-- 
+    <META>
+    Serve para definir metadados, utiliza-se dentro da tag <head></head>, exemplos: 
+
+    -Codificação para Caracteres Especiais
+    <meta charset="UTF-8">
+
+    -Portabilidade para dispositivos móveis
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    </body>
+    </html>
+-->
+ <!-- 
+    META SEO
+    Serve para SEO, ou, motores de busca como o Google
+    Define o autor da página, e assim, sua propriedade sobre a mesma
+
+    <meta name="author" content="Kixevi">
+
+    Usado para descrição do Site, se não houver, o navegador irá buscar qualquer texto do site
+
+    <meta name="description" content="Isso é um site">
+
+    Diz ao robô do Google o que fazer, ele é o responsável pelos resultados de buscas
+
+    <meta name="robots" content="follow">
+--
+    META SOCIAL
+    Metadados específicos de redes sociais, para configuração de compartilhamento de conteúdo
+    Facebook: Open Graph
+
+    <meta property="og:image" content="https://imagem.jpeg">
+
+    <meta property="og:description" content="Texto ao compartilhar">
+
+    <meta property="og:title" content="Titulozão">
+  -->
+
+<!-- 
+    VIDEO E AUDIO
+    <video> e <audio> são as tags utilizadas para adicionar midias em seu site.
+
+    Possuem vários atributos: autoplay, preload, loop, muted, poster.
+
+    OBS: para audios pode utilizar 2 tipos ao mesmo tempo, type="audio/mp3" e stype="audio.ogg"
+-->
+
+    <p>Tag simples</p>
+
+    <video src="media/videocampo.mp4" controls width="500px" preload="none"></video> -->
+
+    <p>Tag Completa</p>
+      
+    <video controls width="500px">
+        <source src="media/videocampo.mp4" type="video/mp4">
+        <p>Video não suportado</p>
+    </video> -->
+
+<!-- Controles: autoplay, loop, muted, poster e  preload: auto-metadata-none -->
+
+    <video controls width="500px" autoplay>
+        <source src="media/videocampo.mp4" type="video/mp4">
+        <p>Video não suportado</p>
+    </video>
+
+<!-- 
+    IFRAME
+    É a abreviação de inline frame, um código que é inserido dentro das páginas do seu site que abre outra página em determinado box.
+    EX: Google Maps e YouTube
+
+    IMAGEM
+    Para trabalhar com imagens utilizamos a tag <img>
+    Temos os seguintes atributos:*src, alt, title, width, heigth
+    *Também podemos adicionar links ou transforma-las em links.
+-->
+
+    <img src="https://source.unsplash.com/random" alt="" width="200px">
+
+<!-- 
+    BACKGROUND-IMAGEM
+    Para utilizar imagens como fundo de um conteúdo.
+    Na tag style
+    Não semântico.
+-->
+    <p style="background-image: url(media/a1.gif);">Texto</p>
+
+<!-- 
+    TITULOS VISIVEIS P/IMAGEM
+    Para definir um titulo visível para imagem utilizamos as tags <figure> e <figcaption>
+ -->
+    <figure>
+        <img src="media/logo.png" width="200px">
+        <figcaption>Logo do Curso</figcaption>
+    </figure>

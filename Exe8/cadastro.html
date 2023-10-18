@@ -1,0 +1,74 @@
+<!-- 
+    O botão Cadastro deve levar até uma página com um formulário, este formulário deve conter os seguintes itens e campos:
+    Título: Cadastre-se->utilize fieldset e legend para isso 
+    Nome Completo:input de texto
+    Email:input de email
+    Idade:input number
+    Data de Nascimento:input data
+    Endereço:input de texto
+    Orientação:select com as opções (ex:Homem,Mulher,etc)
+    Receber Notificações: input radio com as opções Sim e Não
+    Botão: button com a mensagem Cadastrar
+
+    No final dos 2 formulários adicionar um botão de Voltar ao menu 
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Cadastre-se</legend>
+            <label>
+                Nome Completo
+                <input type="text">
+            </label>
+            <br><br>
+            <label>
+                Email
+                <input type="email">
+            </label>
+            <br><br>
+            <label>
+                Idade
+                <input type="number">
+            </label>
+            <br><br>
+            <label>
+                Data de Nascimento
+                <input type="date">
+            </label>
+            <br><br>
+            <label>
+                Endereço
+                <input type="text">
+            </label>
+            <br><br>
+            <label for="orient">Orientação</label>
+            <select name="mf" id="orient">
+                <option value="">Selecione sua Orientação</option>
+                <option value="m">Homem</option>
+                <option value="f">Mulher</option>
+            </select> 
+            <br><br>
+            <label>
+                Deseja receber Notificações?
+            </label>
+            <br><br>
+            <label for="sim">Sim</label>
+            <input type="radio" name="not" id="sim" value="sim" checked>
+            <label for="nao">Não</label>
+            <input type="radio" name="not" id="nao" value="nao">
+            <br><br>
+            <button>Cadastrar</button>
+        </fieldset>
+    </form>
+    <br><br>
+    <a href="index.html"><button>Voltar</button></a>
+</body>
+</html>

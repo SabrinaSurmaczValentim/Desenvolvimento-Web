@@ -1,0 +1,85 @@
+<!-- 
+    Tabela de produtos:
+    Crie uma tabela
+    Adicione um <caption> Lista de produtos
+
+    No cabeçalho da tabela as seguintes colunas: EXEMPLO
+    id:1
+    nome:Vassoura
+    código de produto:vsr01
+    opções:links para infos adicionais, alterar e excluir(fakes por enquanto)
+
+    Os conteúdos das informações do cabeçalho devem ser preenchidas no corpo da tabela <tbody> (mínimo de 5 produtos listados)
+        
+    O rodapé <tfoot> deve conter 2 colunas:
+        
+    *Lista de fornecedores: link que leva para uma tabela com contato de fornecedores (mínimo de 5 fornecedores). Esta tabela deve conter as seguintes informações: Nome, Endereço, Telefone e Email
+
+    *Imagens dos produtos: link que leva para uma tabela com imagens de referência dos produtos (mínimo de 5 imagens). Esta tabela deve conter as seguintes informações: Nome do produto e Imagem do Produto
+
+    Dica: para manter a tabela com o mesmo padrão, utilize nas tags <img> o atributo width="50px"
+
+    Abaixo da tabela, adicionar um link <a href=""> escrito SAIR
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="icon" href="../Imagens Exe5/inicial.ico">
+</head>
+<body>
+    <table border="2">
+        <caption>Lista de produtos</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Macarrão</td>
+                <td>mcr01</td>
+                <th><a href="">ALT</a>   <a href="">DEL</a></th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Arroz</td>
+                <td>ar02</td>
+                <th><a href="">ALT</a>   <a href="">DEL</a></th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Feijão</td>
+                <td>fe03</td>
+                <th><a href="">ALT</a>   <a href="">DEL</a></th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Leite Condensado</td>
+                <td>lc04</td>
+                <th><a href="">ALT</a>   <a href="">DEL</a></th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Bolacha</td>
+                <td>bl05</td>
+                <th><a href="">ALT</a>   <a href="">DEL</a></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center"><a href="Fornecedores.html" target="_blank">Lista de fornecedores</a></td>
+                <td colspan="2" align="center"><a href="Imagens.html" target="_blank">Imagem dos produtos</a></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

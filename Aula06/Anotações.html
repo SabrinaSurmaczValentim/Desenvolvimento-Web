@@ -1,0 +1,348 @@
+<!-- 
+    SVG - não perde qualidade se der zoom
+    Scalable Vector Graphics(Gráficos Vetoriais Escaláveis).
+    Ele é um formato de imagem vetorial suportado pelos navegadores e que pode ser animado/modificado por CSS e JavaScript.
+    Imagem Rasterizada X Imagem Vetorizada 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <svg>
+        <rect width="200" height="100" fill="red" x="10" y="30" stroke="green" stroke-width="5"></rect>
+     </svg>
+    
+     <svg>
+        <rect width="100" height="100" fill="red" x="10" y="30" stroke="green" stroke-width="5"></rect>
+     </svg>
+    
+     <svg>
+        <circle r="40" cx="50" cy="50" fill="blue" stroke="black" stroke-width="5"></circle>
+    </svg>
+    
+    <svg>
+        <rect x="50" y="20" rx="20" ry="20" width="100" height="100" fill="blue" stroke="black" stroke-width="5"></rect>
+    </svg>
+    
+    <svg>
+        <ellipse cx="100" cy="70" rx="85" ry="45" fill="yellow" stroke="red" stroke-width="5"></ellipse>
+    </svg>
+    
+    <svg height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160, 198" fill="yellow" stroke="black" stroke-width="5"></polygon>
+    </svg>
+ </body>
+ </html>
+
+ <!-- 
+    FORMULÁRIOS
+    -Servem para capturar dados de entrada (input), interação e controle de informações.
+    <form action=" " method=" "> = elemento que define um formulário.
+    Action = para onde as informações serão levadas: vazio leva para ele mesmo.
+    Method = forma de como as informações serão levadas, GET ou POST.
+  -->
+    <p><form action="" method=""></form></p>
+
+ <!-- 
+    FIELDSET
+    Agrupamento de campos com o mesmo propósito
+    Disabled=desabilita os elementos internos 
+    Form=é o ID do formulário ao qual o fieldset pertence 
+    Name=nome do grupo
+    <legend>=nome do agrupamento 1 elemento no fieldset 
+  -->
+<p>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <input type="text" name="" id="">
+            <button>enviar</button>
+        </fieldset>
+    </form>
+</p>
+  
+
+  <!-- 
+    LABEL 
+    Associa e identifica uma ou mais tags de entrada 
+    <label>Nome Completo
+        <input type="text">
+    </label>
+    LABEL
+    For=conexão entre o label e a tag de entrada (via id do input)
+    <label for="nome">Nome Completo</label>
+    <input id="nome" type="text">
+   -->
+    <p>
+    <label>
+        Nome Completo
+        <input type="text">
+   </label>
+    </p>
+    <p>
+   <label for="nome">Nome Completo</label>
+   <input type="text" name="" id="nome">
+    </p>
+
+<!-- 
+    BUTTON
+    Representa um botão, usado para enviar formulários.
+    Type: submit, reset, button
+    Submit = envia um formulário
+    Reset = limpa um formulário
+    Button = alguns navegadores interpretam como submit
+    Autofocus - Disabled - Name - Value - Form
+    <button type="submit">Enviar</button>
+-->
+    <p><button>Enviar</button></p>
+
+<!-- 
+    DATALIST
+    Lista de valores como sugestão de uma tag <input>;
+    Valores sugestivos e não obrigatórios;
+    Usuário pode selecionar um valor ou colocar um diferente da sugestão.
+    <datalist id="nomes">
+        <option>Maria</option>
+        <option>Ana</option>
+    </datalist>
+    <input type="text" list="nomes" placeholder="Nome">
+ -->
+    <p>
+    <datalist id="nomes">
+        <option>Ana</option>
+        <option>Maria</option>
+        <option>Braga</option>
+    </datalist>
+    <input type="text" list="nomes" placeholder="Nome">
+    </p>
+
+<!-- 
+    INPUT
+    Mais usado em formulários;
+    Aceita os mais diversos tipos de dados.
+
+    Type = definição do tipo de input (text, email, etc);
+    Name = utilizado para receber os dados do input no back-end, é +- uma variável do dado;
+    Autocomplete = busca dados usados com frequência no navegador;
+    Disabled = desabilita um input;
+    Readonly = somente leitura;
+    Form = linkar o input pelo id com algum formulário;
+    Value = valor já preenchido no input;
+    Required = torna o preenchimento obrigatório;
+    Placeholder = Informação do que digitar, estético;
+ -->
+
+<!-- 
+    INPUT PASSWORD
+    Inputmode = altera o uso do teclado em smartphones
+    EX: queremos apenas números inputmode="numeric"
+    Autocomplete on = permite sugestão de: new-password ou current- password;
+    Autocomplete off = desabilita a opção
+    Autocomplete new-password = o navegador poderá sugerir uma nova senha
+ -->
+    <p>
+    <form action="">
+        <input type="password" minlength="4">
+        <button type="submit">Enviar</button>
+    </form>
+    </p>
+
+    <p>
+    <form action="">
+        <input type="password" pattern="[0-9a-fA-F]{4,8}" title="Coloque no mínimo 4 e no máximo 8 caracteres">
+        <button type="submit">Enviar</button>
+    </form> 
+    </p>
+
+    <p>
+    <form action="">
+        <input type="email" name="" id="">
+        <button type="submit">Entrar</button>
+    </form> 
+    </p>
+
+    <!-- Atributo multiple permite adicionar mais de 1 email no mesmo input, separado por virgula. -->
+
+    <p>
+    <form action="">
+        <input type="email" name="" id="" pattern=".+@camporeal.edu.br" title="Apenas dominio @camporeal">
+    <button type="submit">Entrar</button>
+    </form> 
+    </p>
+
+    <p>
+    <form action="">
+        <input type="url" name="" id="">
+        <button type="submit">Entrar</button>
+    </form> 
+    </p>
+
+    <p>
+    <form action="">
+        <input type="url" name="" id="" pattern=".*\.com.br\.*" title="Apenas url .com.br">
+        <button type="submit">Entrar</button>
+    </form> 
+    </p>
+
+    <p>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="" id="" accept=".doc">
+    </form> 
+    </p>
+
+    <p>
+    <form action="">
+        <input type="color" name="" id="">
+    </form> 
+    </p>
+ 
+    <p>
+    <datalist id="cores">
+        <option>#0000ff</option>
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+    </datalist>
+    </p>
+
+    <p>
+    <form action="">
+        <input type="color" name="" id="" list="cores">
+    </form> 
+    </p>
+
+    <p>
+    <label for="sub">Receber Notificações?</label>
+    <input type="checkbox" name="notificacoes" id="sub">
+    </p>
+
+    <p>
+    <label for="sub">Receber Notificações?</label>
+    <input type="checkbox" name="notificacoes" id="sub" checked> 
+    </p>
+
+    <p>
+    <fieldset>
+        <legend>Interesses</legend>
+        <div>
+            <input type="checkbox" name="interesse" id="musica" value="musica" checked>
+            <label for="musica">Música</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interesse" id="cinema" value="cinema">
+            <label for="cinema">Cinema</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interesse" id="jogos" value="jogos">
+            <label for="jogos">Jogos</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interesse" id="esportes" value="esportes">
+            <label for="esportes">Esportes</label>
+        </div>
+        <button type="submit" >Enviar</button>
+    </fieldset> 
+    </p>
+
+    <p>
+    <input type="hidden" name="time" id="time" value="1286705410"> 
+    </p>
+
+<!-- /\ HIDDEN: Invisivel ao usuário,será enviado com o formulário, não recebe foco, leitores de tela não percebem.
+EX: enviar o horário em que o formulário foi submetido. -->
+
+    <p>
+    <fieldset>
+        <legend>Bora jogar um LOL?</legend>
+        <label for="sim">Bora</label>
+        <input type="radio" name="lol" id="sim" value="sim" checked>
+        <br>
+        <label for="nao">Não Bora</label>
+        <input type="radio" name="lol" id="nao" value="nao">
+    </fieldset> 
+    </p>
+
+    <p>
+    <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escreva sua redação aqui"></textarea> 
+    </p>
+
+    <!-- /\ wrap = on e off -> função: quebra de linha automática -->
+
+    <p>
+    <label for="carro">Modelos de Carros</label>
+    <select name="modelo" id="carro">
+        <option value="">Selecione o Modelo</option>
+        <option value="fiat">Uno</option>
+        <option value="gm">Corsa</option>
+        <option value="vw">Gol</option>
+    </select> 
+    </p>
+
+    <p>
+        <label>Carros</label>
+        <select name="carros">
+            <optgroup label="Fiat">
+                <option value="">Uno</option>
+                <option value="">Argo</option>
+                <option value="">Toro</option>
+            </optgroup>
+            <optgroup label="VW">
+                <option value="">Gol</option>
+                <option value="">Nivus</option>
+                <option value="">Saveiro</option>
+            </optgroup>
+    </select> 
+    </p>
+
+    <p>
+    <form action="">
+        <input type="search" name="busca" id="busca" placeholder="Pesquisar">
+        <button type="submit">Buscar</button>
+    </form> 
+
+    </p>
+
+    <p>
+        <form action="">
+            <input type="search" name="busca" id="busca" placeholder="Pesquisar ID" pattern="[0-9]{2}" title="Digite apenas números">
+            <button type="submit">Buscar</button>
+        </form>
+    </p>
+
+    <p>
+    <form action="">
+        <input type="number" min="2" max="10">
+        <button>Enviar</button>
+    </form>
+    </p>
+
+    <p>
+    <form action="">
+        <input type="number" step="5">
+        <button>Enviar</button>
+    </form> 
+    </p>
+
+    <input type="range" name="" id="">
+
+    <input type="range" min="1" max="100">
+
+    <input type="range" min="1" max="100" value="80">
+
+
+
+<!-- CAMPOS INTERESSANTES, MAS QUE AINDA NÃO POSSUEM ÓTIMO SUPORTE -->
+
+<!-- <input type="date" value="2022-03-10">
+
+<input type="datetime-local">
+
+<input type="month">
+
+<input type="time" name="" id="">
+
+<input type="week" name="" id=""> -->
